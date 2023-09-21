@@ -1,0 +1,44 @@
+{
+    "name": "graham-campbell/security",
+    "description": "Security Is An Anti-XSS Wrapper For Laravel",
+    "keywords": ["laravel", "framework", "security", "xss", "anti-xss", "Security", "Laravel Security", "Laravel-Security", "Graham Campbell", "GrahamCampbell"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Graham Campbell",
+            "email": "hello@gjcampbell.co.uk",
+            "homepage": "https://github.com/GrahamCampbell"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "graham-campbell/security-core": "^4.0",
+        "illuminate/contracts": "^9.0 || ^10.0",
+        "illuminate/support": "^9.0 || ^10.0"
+    },
+    "require-dev": {
+        "graham-campbell/analyzer": "^4.0",
+        "graham-campbell/testbench": "^6.0",
+        "phpunit/phpunit": "^9.6.3 || ^10.0.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrahamCampbell\\Security\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GrahamCampbell\\Tests\\Security\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GrahamCampbell\\Security\\SecurityServiceProvider"
+            ]
+        }
+    }
+}
